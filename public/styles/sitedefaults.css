@@ -1,0 +1,188 @@
+	html, body{
+		margin: 0;
+		padding: 0;
+		width: 100%;
+		height: 100%;
+		overflow: hidden;
+	}
+   
+   #map {
+    height: 100%;
+    width: 100%;
+   }
+
+  div#load-screen{
+    background: white;
+    opacity: 1;
+    position: fixed;
+    z-index:15;
+    top:0px;
+    width:100%;
+    height: 100%;
+  }
+
+  div#load-screen > div#loading{
+    color:black;
+    width:120px;
+    height:24px;
+    margin:20% auto;
+  }
+
+  div#loading img{
+    width: 120px;
+    height: 120px;
+  }
+
+  #show-dashboard {
+    position: absolute;
+    background: beige;
+    width: 100px;
+    bottom:15%;
+    z-index: 9;
+  }
+
+  /* Dashboard game overlay. 
+  Responsive with porportions 204px in 900px height window
+  and 730px in 1920px width window */
+/*  #dashbrd-overlay-display {
+    position: absolute;
+    bottom:0;
+    opacity: 0.9;
+    left: 50%;
+    margin-left: -19%;
+    width: 38%;
+    height: 23%; 
+    z-index: 10;
+    display: none;
+  }*/
+
+  /* Inner game position radius. 
+  Responsive with porportions 270px in 900px height window
+  and 540px in 1920px width window */
+/*  #overlay-rad-position1 {
+    position: absolute;
+    background: red;
+    left: 50%;
+    bottom:12%;
+    margin-left: -14%;
+    opacity: 0.2;
+      height:30%;
+     width: 28%; 
+     z-index: 9;
+     display: none;
+     border-radius: 28% 28% 0 0;
+     -moz-border-radius: 28% 28% 0 0;
+     -webkit-border-radius: 28% 28% 0 0;
+  }*/
+  
+  /* Outer game position radius. 
+  Responsive with porportions 600px in 900px height window
+  and 540px in 1920px width window */
+/*  #overlay-rad-position2 {
+    position: absolute;
+    background: yellow;
+    left: 50%;
+    bottom:0px;
+    margin-left: -31%;
+    opacity: 0.2;
+      height:66%;
+     width: 62%;
+     z-index: 8;
+     display: none;
+     border-radius: 62% 62% 0 0;
+     -moz-border-radius: 62% 62% 0 0;
+     -webkit-border-radius: 62% 62% 0 0;
+  }*/
+
+/***********************************
+				/*margin-left: -19%;
+				    width: 38%;*/
+
+
+   #dashbrd-overlay-display {
+        position: absolute;
+        bottom:0;
+        opacity: 0.9;
+        left: 50%;
+        margin-left: -365px;
+        width: 730px;
+        height: 204px; 
+        z-index: 10;
+        display: none;
+      }
+
+/***********************************
+				/*margin-left: -14%;
+					bottom:12%;
+					height:30%;
+				    width: 28%;
+				    border-radius: 28% 28% 0 0;
+     				-moz-border-radius: 28% 28% 0 0;
+     				-webkit-border-radius: 28% 28% 0 0;*/
+
+      #overlay-rad-position1 {
+        position: absolute;
+        background: red;
+        left: 50%;
+        bottom:110px;
+        margin-left: -270px;
+        opacity: 0.2;
+          height:270px;
+         width: 540px; 
+         z-index: 9;
+         display: none;
+         border-radius: 540px 540px 0 0;
+         -moz-border-radius: 540px 540px 0 0;
+         -webkit-border-radius: 540px 540px 0 0;
+      }
+
+/***********************************
+				/*margin-left: -31%;
+					height:66%;
+				    width: 62%;
+				    border-radius: 62% 62% 0 0;
+     				-moz-border-radius: 62% 62% 0 0;
+     				-webkit-border-radius: 62% 62% 0 0;*/
+
+      #overlay-rad-position2 {
+        position: absolute;
+        background: yellow;
+        left: 50%;
+        bottom:0px;
+        margin-left: -600px;
+        opacity: 0.2;
+          height:600px;
+         width: 1200px;
+         z-index: 8;
+         display: none;
+         border-radius: 1200px 1200px 0 0;
+         -moz-border-radius: 1200px 1200px 0 0;
+         -webkit-border-radius: 1200px 1200px 0 0;
+      }
+
+a[href^="http://maps.google.com/maps"]{display:none !important}
+a[href^="https://maps.google.com/maps"]{display:none !important}
+
+.gmnoprint a, .gmnoprint span, .gm-style-cc {
+    display:none;
+}
+.gmnoprint div {
+    background:none !important;
+}
+
+
+@media only screen and (max-width: 1300px) {
+    #dashbrd-overlay-display {
+        margin-left: -322px;
+        width: 644px;
+        height: 180px; 
+      }
+}
+
+@media only screen and (max-width: 900px) {
+    #dashbrd-overlay-display {
+        margin-left: -286px;
+        width: 572px;
+        height: 160px; 
+      }
+}
